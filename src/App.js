@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import './App.css';
 import Header from './components/Header';
+import Main from './components/Main';
 
 function App(){
     const [date, setDate] = useState(new Date());
@@ -20,6 +21,7 @@ function App(){
     return(
         <>
             <Header dateAvecJour={dateAvecJour} />
+            <Main />
         </>
     )
 }

@@ -10,12 +10,12 @@ function Anniv({prenom, nom, color}){
 
     return(
         <Col xs={12} className={classes}>
-            <Row>
+            <Row className="d-flex justify-content-center align-items-center">
                 <Col xs={3}>
                     <Row>
                         <Col><Image src={etoile}/></Col>
                     </Row>
-                    <Row>
+                    <Row className='align-self-end'>
                         <Col><Image src={etoile}/></Col>
                     </Row>
                 </Col>

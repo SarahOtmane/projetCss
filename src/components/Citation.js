@@ -32,7 +32,7 @@ function Citation(){
             </Row>
             <Row className='mx-5 my-4 justify-content-center'>
                 <Col xs={1}><p className='text1'>01</p></Col>
-                <Col xs={8}><ProgressBar now={now} label={`${now}%`} visuallyHidden /></Col>
+                <Col xs={8}><ProgressBar now={now} label={`${now}%`} visuallyHidden variant="success" /></Col>
                 <Col xs={1}><p className='text1'>03</p></Col>
             </Row>
         </Col>

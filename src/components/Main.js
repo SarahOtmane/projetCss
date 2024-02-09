@@ -12,10 +12,10 @@ function Main(){
     const color = 'rose';
 
     return(
-        <main className="border border-2 border-black">
+        <main>
             {
                 personnes.map((personne, index) => (
-                    <Row key={index} className="d-flex flex-row">
+                    <Row key={index} className="border border-2 border-black">
                         <Anniv prenom={personne.prenom} nom={personne.nom} color={color} />
                         <Citation color={color} />
                     </Row>

@@ -9,7 +9,7 @@ function Anniv({prenom, nom, color}){
     const classes = [color, "border-end border-2 border-black", "text-center"].join(" ");
 
     return(
-        <Col xs={12} className={classes}>
+        <Col xs={6} className={classes}>
             <Row className="d-flex justify-content-center align-items-center">
                 <Col xs={3}>
                     <Row>
@@ -19,7 +19,7 @@ function Anniv({prenom, nom, color}){
                         <Col><Image src={etoile}/></Col>
                     </Row>
                 </Col>
-                <Col xs={6}><Image src={anniv}/></Col>
+                <Col xs={6}><Image src={anniv} className='spin'/></Col>
                 <Col xs={3}><Image src={etoile}/></Col>
             </Row>
             <Row>

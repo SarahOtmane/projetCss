@@ -10,11 +10,32 @@
 
 }
 
-.text{
+.text, .text1{
   font-family: 'bison', sans-serif;
   font-size: 40px;
 }
 
+article .text{
+  font-size: 27px;
+}
+
+.text1{
+  font-size: 18px;
+}
+
 .rose{
   background-color: #DF80AC;
+}
+
+.spin{
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin{
+  form{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }

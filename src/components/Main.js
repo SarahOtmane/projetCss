@@ -19,18 +19,18 @@ function Main() {
             setIndexC((prevIndexC) => (prevIndexC + 1 < couleurs.length ? prevIndexC + 1 : 0));
         }, 3000);
 
-        // Clear the interval when the component is unmounted
         return () => clearInterval(affichMain);
     }, [index, personnes.length, couleurs.length]);
 
     const currentPersonne = personnes[index];
     const couleur = couleurs[indexC];
+    const progress = ((index + 1) / personnes.length) * 100;
 
     return (
         <main>
             <Row key={index} className={`border border-2 border-black`}>
                 <Anniv prenom={currentPersonne.prenom} nom={currentPersonne.nom} couleur={couleur} />
-                <Citation couleur={couleur} />
+                <Citation couleur={couleur} progress={progress} index={index+1} total={personnes.length} />
             </Row>
         </main>
     );

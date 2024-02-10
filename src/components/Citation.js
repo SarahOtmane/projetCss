@@ -5,19 +5,15 @@ import { ProgressBar } from 'react-bootstrap';
 
 import gif from '../assets/pics/gif.svg';
 
-function Citation({ couleur, progress, index, total }) {
+function Citation({ couleur, progress, index, total, citation }) {
     return (
         <Col xs={6}>
             <Row>
                 <Col xs={12}>
                     <div className={`${couleur} z-0 m-5 pb-3 border-2 border-black rounded-4`}>
                         <article className='ms-3 border border-2 border-black rounded-4 z-1 white'>
-                            <p className='mx-3 text'>
-                                I've missed more than 9,000 shots in my career. I've lost almost 300 games.
-                                Twenty-six times I've been trusted to take the game-winning shot and missed.
-                                I've failed over and over and over again in my life. And that is why I succeed.
-                            </p>
-                            <p className='me-3 text-end text'>- MICHAEL JORDAN</p>
+                            <p className='mx-3 text'>{citation.text}</p>
+                            <p className='me-3 text-end text'>- {citation.auteur}</p>
                         </article>
                     </div>
                 </Col>

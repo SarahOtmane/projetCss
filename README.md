@@ -1,15 +1,20 @@
-# Getting Started with Create React App
+# Projet React en utilisant Bootstrap
 
-This project was bootstrapped with React
+Ce projet est une application React conçue pour afficher les informations des personnes dont l'anniversaire correspond à aujourd'hui.
 
-## Available Scripts
+## Installation
+```bash
+   git clone https://github.com/votre-utilisateur/votre-projet.git
+   cd votre-projet
+```
 
-In the project directory, you can run:
+## Dépendances à installer
+- bootstrap
+- react-bootstrap
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Utilisation
+Pour lancer l'application en mode développement, utilisez la commande :
+```bash
+   npm start
+```
+Le projet sera accessible à l'adresse http://localhost:3000 dans votre navigateur.

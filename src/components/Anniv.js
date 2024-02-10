@@ -5,11 +5,10 @@ import Row from 'react-bootstrap/Row';
 import anniv from '../assets/pics/anniv.svg';
 import etoile  from '../assets/pics/etoile.svg'
 
-function Anniv({prenom, nom, color}){
-    const classes = [color, "border-end border-2 border-black", "text-center"].join(" ");
+function Anniv({prenom, nom, couleur}){
 
     return(
-        <Col xs={6} className={classes}>
+        <Col xs={6} className={`${couleur} border-end border-2 border-black text-center`}>
             <Row className="d-flex justify-content-center align-items-center mt-5">
                 <Col xs={2}>
                     <Image src={etoile}/>

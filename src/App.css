@@ -30,6 +30,14 @@ article .text{
   background-color: #DF80AC;
 }
 
+.vert{
+  background-color: green;
+}
+
+.bleu{
+  background-color: blue;
+}
+
 .white{
   background-color: white;
 }

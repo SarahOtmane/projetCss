@@ -10,20 +10,16 @@ function Anniv({prenom, nom, color}){
 
     return(
         <Col xs={6} className={classes}>
-            <Row className="d-flex justify-content-center align-items-center">
-                <Col xs={3}>
-                    <Row>
-                        <Col><Image src={etoile}/></Col>
-                    </Row>
-                    <Row className='align-self-end'>
-                        <Col><Image src={etoile}/></Col>
-                    </Row>
+            <Row className="d-flex justify-content-center align-items-center mt-5">
+                <Col xs={2}>
+                    <Image src={etoile}/>
+                    <Image src={etoile}/>
                 </Col>
-                <Col xs={6}><Image src={anniv} className='spin'/></Col>
-                <Col xs={3}><Image src={etoile}/></Col>
+                <Col xs={8}><Image src={anniv} className='spin mt-5'/></Col>
+                <Col xs={2}><Image src={etoile}/></Col>
             </Row>
-            <Row>
-                <Col xs={12}><h1 className='text'>{prenom} {nom}</h1></Col>
+            <Row className='mt-5'>
+                <Col xs={12}><h1 className='text3 mt-5'>{prenom} {nom}</h1></Col>
             </Row>
         </Col>
     )

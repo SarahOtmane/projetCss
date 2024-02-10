@@ -7,7 +7,6 @@
        url('./assets/fonts/bison-bold-webfont.svg#bisonbold') format('svg');
   font-weight: bold;
   font-style: normal;
-
 }
 
 .text, .text1{
@@ -23,8 +22,16 @@ article .text{
   font-size: 18px;
 }
 
+.text3{
+  font-size: 100px;
+}
+
 .rose{
   background-color: #DF80AC;
+}
+
+.white{
+  background-color: white;
 }
 
 .spin{

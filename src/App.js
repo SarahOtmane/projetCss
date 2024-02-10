@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Container from 'react-bootstrap/Container';
+
+import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
+
+function App(){
+    const [date, setDate] = useState(new Date());
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setDate(new Date());
+        }, 1000); 
+      
+        return () => clearInterval(interval); 
+    }, []);
+
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateAvecJour = date.toLocaleDateString('fr-FR', options);
+
+    return(
+        <Container fluid className='m-0'>
+            <Header dateAvecJour={dateAvecJour} />
+            <Main />
+        </Container>
+    )
 }
 
 export default App;
